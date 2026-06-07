@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!
+    PureShine Auto Detail - Homepage
+    Author: Shehnab Rahman Sajid (SR)
+    Date: June 2026
+    Description: Homepage for PureShine Auto Detail
+    portfolio website - Assessment 4
+  >
+
+  <! Character set >
+  <meta charset="UTF-8">
+
+  <! Makes page look good on mobile >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <! Page title shown on browser tab >
+  <title>PureShine Auto Detail</title>
+
+  <! Logo icon shown on browser tab >
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <! External CSS file only >
+  <link rel="stylesheet" href="CSS/portfolio.css">
+
+</head>
+
+<body>
+
+  <!  NAVIGATION BAR  >
+  <! Same nav bar used on every page -->
+  <nav>
+
+    <! Logo on the left >
+    <div id="logo">
+      <img src="images/logo.png" alt="PureShine Logo" height="40">
+      <span id="logo-text">Pure<span id="logo-shine">Shine</span> Auto Detail</span>
+    </div>
+
+    <! Nav links styled as CSS buttons >
+    <div id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sr_A4_resume.html">Resume</a>
+      <a href="sr_A4_web_skills.html">Web Skills</a>
+      <a href="sr_A4_customer_service.html">Customer Service</a>
+      <a href="sr_A4_attention_to_detail.html">Attention to Detail</a>
+      <a href="sr_A4_problem_solving.html">Problem Solving</a>
+      <a href="javascriptpage.html">Newsletter</a>
+    </div>
+
+  </nav>
+  <! END NAVIGATION BAR ->
+
+
+  <!HERO SECTION >
+  <! Big banner introducing me to potential employers >
+  <div id="hero">
+
+    <! Main heading >
+    <h1>Hi, I am Shehnab Rahman Sajid</h1>
+
+    <! Introduction for potential employers >
+    <p>Bachelor of IT Student &mdash; Cybersecurity Major</p>
+    <p>Charles Sturt University, Sydney</p>
+
+    <! Call to action button >
+    <a href="sr_A4_resume.html" class="btn">View My Resume</a>
+
+  </div>
+  <! END HERO SECTION >
+
+
+  <! ABOUT ME SECTION ->
+  <div class="section">
+
+    <h2>About Me</h2>
+
+    <! Left aligned paragraph->
+    <p class="align-left">
+      Hi! My name is Shehnab Rahman Sajid and I am currently
+      studying a Bachelor of Information Technology with a
+      major in Cybersecurity at Charles Sturt University in
+      Sydney. I am passionate about technology, web development
+      and keeping digital systems safe and secure. I am seeking
+      employment in the mobile car detailing industry where I
+      can apply my technical and communication skills.
+    </p>
+
+    <!-Centre aligned paragraph >
+    <p class="align-center">
+      Welcome to my professional portfolio website for
+      <strong>PureShine Auto Detail</strong> &mdash;
+      a mobile car detailing company based in Sydney.
+    </p>
+
+    <!-- Right aligned paragraph -->
+    <p class="align-right">&copy; Shehnab Rahman Sajid 2026</p>
+
+  </div>
+  <!--  END ABOUT ME SECTION  -->
+
+
+  <!--  MY SKILLS SECTION  -->
+  <div class="section">
+
+    <h2>My Key Skills</h2>
+
+    <p class="align-left">
+      Here are the four key skills I bring to PureShine
+      Auto Detail as a potential employee:
+    </p>
+
+    <!-- Unordered list - bullets are squares from CSS -->
+    <ul>
+      <li>
+        <strong>Web Development</strong> &mdash;
+        Building and maintaining professional websites
+        <a href="sr_A4_web_skills.html">View Skills</a>
+      </li>
+      <li>
+        <strong>Customer Service</strong> &mdash;
+        Communicating professionally with clients
+        <a href="sr_A4_customer_service.html">View Skills</a>
+      </li>
+      <li>
+        <strong>Attention to Detail</strong> &mdash;
+        Ensuring high quality work in every task
+        <a href="sr_A4_attention_to_detail.html">View Skills</a>
+      </li>
+      <li>
+        <strong>Problem Solving</strong> &mdash;
+        Finding solutions to challenges quickly
+        <a href="sr_A4_problem_solving.html">View Skills</a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- ===== END MY SKILLS SECTION ===== -->
+
+
+  <!-- ===== ABOUT PURESHINE SECTION ===== -->
+  <div class="section">
+
+    <h2>About PureShine Auto Detail</h2>
+
+    <p class="align-left">
+      PureShine Auto Detail is a mobile car detailing company
+      serving the Sydney area. We bring professional grade
+      detailing equipment directly to your home or workplace
+      so you never have to leave to get a spotless car. Our
+      team is trained, insured and passionate about cars.
+    </p>
+
+    <!-- Ordered list - Roman numerals from CSS -->
+    <h3>How to Book</h3>
+    <ol>
+      <li>Choose your package below</li>
+      <li>Select your preferred date and time</li>
+      <li>Enter your location and vehicle details</li>
+      <li>Confirm your booking via email</li>
+      <li>We come to you!</li>
+    </ol>
+
+  </div>
+  <!-- ===== END ABOUT PURESHINE SECTION ===== -->
+
+
+  <!-- ===== PRICING PACKAGES SECTION ===== -->
+  <!-- id="packages" used so the button above can jump here -->
+  <div id="packages">
+
+    <!-- Basic package card -->
+    <div class="price-card">
+      <h3>Basic Shine</h3>
+      <p>Exterior wash, dry and tyre shine</p>
+      <p><strong>$59</strong></p>
+      <a href="mailto:book@pureshine.com" class="btn">Book Now</a>
+    </div>
+
+    <!-- Most popular package card -->
+    <div class="price-card" id="popular">
+      <h3>Full Detail</h3>
+      <p>Interior + exterior full detail</p>
+      <!-- span used for old price strikethrough -->
+      <p>Was <span class="old-price">$199</span> now <strong>$149</strong></p>
+      <a href="mailto:book@pureshine.com" class="btn">Book Now</a>
+    </div>
+
+    <!-- Premium package card -->
+    <div class="price-card">
+      <h3>Premium Protect</h3>
+      <p>Full detail + ceramic coating</p>
+      <p><strong>$349</strong></p>
+      <a href="mailto:book@pureshine.com" class="btn">Book Now</a>
+    </div>
+
+  </div>
+  <!-- ===== END PRICING PACKAGES SECTION ===== -->
+
+
+  <!-- ===== NEWSLETTER SECTION ===== -->
+  <div class="section">
+
+    <h2>Stay Updated</h2>
+
+    <p class="align-center">
+      Sign up for our newsletter to get the latest deals
+      and promotions from PureShine Auto Detail!
+    </p>
+
+    <!-- Link to newsletter form page -->
+    <p class="align-center">
+      <a href="javascriptpage.html" class="btn">Sign Up for Newsletter</a>
+    </p>
+
+  </div>
+  <!-- = END NEWSLETTER SECTION = -->
+
+
+  <!-- = FOOTER  -->
+  <!-- Footer contains contact details and copyright notice -->
+  <div id="footer">
+
+    <!-- Contact details -->
+    <p>Email: <a href="mailto:book@pureshine.com">book@pureshine.com</a></p>
+    <p>Phone: <a href="tel:+61400000000">+61 400 000 000</a></p>
+
+    <!-- External link opens in new tab -->
+    <p>Follow us:
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </p>
+
+    <!-- Copyright notice as required -->
+    <p>
+      &copy; 2026 PureShine Auto Detail. All content on
+      this website is owned by Shehnab Rahman Sajid.
+      Permission has been granted to use all images
+      and content on this site.
+    </p>
+
+  </div>
+  <!--  END FOOTER  -->
+
+
+</body>
+</html>

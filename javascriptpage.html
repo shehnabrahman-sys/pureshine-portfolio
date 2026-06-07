@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    PureShine Auto Detail - JavaScript Newsletter Form Page
+    Author: Shehnab Rahman Sajid (SR)
+    Date: June 2026
+    Description: JavaScript newsletter signup form page
+    for PureShine Auto Detail - Assessment 4
+  -->
+
+  <!-- Character set -->
+  <meta charset="UTF-8">
+
+  <!-- Makes page look good on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title shown on browser tab -->
+  <title>Newsletter - PureShine Auto Detail</title>
+
+  <!-- Logo icon shown on browser tab -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- External CSS file only -->
+  <link rel="stylesheet" href="CSS/portfolio.css">
+
+</head>
+
+<!-- onload triggers the welcome alert when the page opens -->
+<body onload="welcomeMessage()">
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav>
+
+    <!-- Logo on the left -->
+    <div id="logo">
+      <img src="images/logo.png" alt="PureShine Logo" height="40">
+      <span id="logo-text">Pure<span id="logo-shine">Shine</span>
+        Auto Detail</span>
+    </div>
+
+    <!-- Nav links as CSS buttons -->
+    <div id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sr_A4_resume.html">Resume</a>
+      <a href="sr_A4_web_skills.html">Web Skills</a>
+      <a href="sr_A4_customer_service.html">Customer Service</a>
+      <a href="sr_A4_attention_to_detail.html">Attention to Detail</a>
+      <a href="sr_A4_problem_solving.html">Problem Solving</a>
+      <a href="javascriptpage.html">Newsletter</a>
+    </div>
+
+  </nav>
+  <!-- ===== END NAVIGATION BAR ===== -->
+
+
+  <!-- ===== BANNER ===== -->
+  <div id="skills-banner">
+    <h1>Newsletter Signup</h1>
+    <p>Sign up to receive the latest deals from PureShine Auto Detail</p>
+  </div>
+  <!-- ===== END BANNER ===== -->
+
+
+  <!-- ===== FORM SECTION ===== -->
+  <div class="section">
+
+    <h2>Sign Up for Our Newsletter</h2>
+
+    <p class="align-left">
+      Fill in the form below to sign up for the PureShine
+      Auto Detail newsletter. You will receive the latest
+      deals, promotions and news directly to your inbox.
+      Fields marked with <strong>*</strong> are required.
+    </p>
+
+    <!-- ===== NEWSLETTER FORM ===== -->
+    <!-- action uses post method as required -->
+    <!-- onsubmit calls the validateForm function -->
+    <form
+      id="newsletter-form"
+      action="process.php"
+      method="post"
+      onsubmit="return validateForm()">
+
+      <!-- ===== FIRST NAME FIELD ===== -->
+      <!-- Text box maximum size 60 as required -->
+      <div class="form-group">
+        <label for="firstname">
+          First Name <span class="required">*</span>
+        </label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          maxlength="60"
+          placeholder="Enter your first name">
+        <!-- Required notice for user -->
+        <small>Required &mdash; maximum 60 characters</small>
+      </div>
+
+      <!-- ===== LAST NAME FIELD ===== -->
+      <!-- Text box maximum size 60 as required -->
+      <div class="form-group">
+        <label for="lastname">
+          Last Name <span class="required">*</span>
+        </label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          maxlength="60"
+          placeholder="Enter your last name">
+        <!-- Required notice for user -->
+        <small>Required &mdash; maximum 60 characters</small>
+      </div>
+
+      <!-- ===== EMAIL FIELD ===== -->
+      <!-- Email box maximum size 60 as required -->
+      <div class="form-group">
+        <label for="email">
+          Email Address <span class="required">*</span>
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          maxlength="60"
+          placeholder="Enter your email address">
+        <!-- Required notice for user -->
+        <small>Required &mdash; maximum 60 characters</small>
+      </div>
+
+      <!-- ===== AGE RANGE RADIO BUTTONS ===== -->
+      <!-- 5 radio buttons for age ranges as required -->
+      <div class="form-group">
+        <label>Age Range <span class="required">*</span></label>
+        <small>Please select your age range</small>
+
+        <!-- Each radio button on its own line -->
+        <div class="radio-group">
+          <input type="radio" id="age1" name="age" value="15-25">
+          <label for="age1">15 &mdash; 25</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="age2" name="age" value="26-35">
+          <label for="age2">26 &mdash; 35</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="age3" name="age" value="36-45">
+          <label for="age3">36 &mdash; 45</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="age4" name="age" value="46-55">
+          <label for="age4">46 &mdash; 55</label>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" id="age5" name="age" value="55+">
+          <label for="age5">55+</label>
+        </div>
+
+      </div>
+
+      <!-- ===== SERVICES CHECKBOXES ===== -->
+      <!-- 5 checkboxes for PureShine services as required -->
+      <div class="form-group">
+        <label>Services Interested In</label>
+        <small>Select all services you are interested in</small>
+
+        <!-- Each checkbox on its own line -->
+        <div class="checkbox-group">
+          <input type="checkbox" id="service1"
+            name="services" value="basic">
+          <label for="service1">Basic Shine &mdash;
+            Exterior wash and dry</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="service2"
+            name="services" value="full">
+          <label for="service2">Full Detail &mdash;
+            Interior and exterior</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="service3"
+            name="services" value="premium">
+          <label for="service3">Premium Protect &mdash;
+            Full detail and ceramic coating</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="service4"
+            name="services" value="engine">
+          <label for="service4">Engine Bay Cleaning</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="service5"
+            name="services" value="paint">
+          <label for="service5">Paint Decontamination</label>
+        </div>
+
+      </div>
+
+      <!-- ===== MESSAGE TEXT AREA ===== -->
+      <!-- Minimum 60 cols and 3 rows as required -->
+      <div class="form-group">
+        <label for="message">Additional Comments</label>
+        <textarea
+          id="message"
+          name="message"
+          cols="60"
+          rows="3"
+          placeholder="Enter any additional comments or questions here">
+        </textarea>
+      </div>
+
+      <!-- ===== SUBMIT AND RESET BUTTONS ===== -->
+      <div class="form-buttons">
+
+        <!-- Submit button calls validateForm -->
+        <input
+          type="submit"
+          value="Sign Up"
+          class="btn">
+
+        <!-- Reset button clears all fields -->
+        <input
+          type="reset"
+          value="Reset Form"
+          class="btn-reset">
+
+      </div>
+
+    </form>
+    <!-- ===== END NEWSLETTER FORM ===== -->
+
+  </div>
+  <!-- ===== END FORM SECTION ===== -->
+
+
+  <!-- ===== FOOTER ===== -->
+  <div id="footer">
+    <p>&copy; 2026 PureShine Auto Detail &mdash;
+      Shehnab Rahman Sajid. All rights reserved.</p>
+    <p>All content on this website is owned by
+      Shehnab Rahman Sajid.</p>
+  </div>
+  <!-- ===== END FOOTER ===== -->
+
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <!-- JavaScript is placed at the bottom of the page -->
+  <!-- This is best practice so the page loads first -->
+  <script>
+
+    /* ===== WELCOME MESSAGE FUNCTION ===== */
+    /* This function runs when the page loads */
+    /* It shows a welcome alert as required by assessment */
+    function welcomeMessage() {
+      alert(
+        "Welcome to the PureShine Auto Detail Corporation" +
+        " - Newsletter Signup"
+      );
+    }
+
+    /* ===== FORM VALIDATION FUNCTION ===== */
+    /* This function runs when the form is submitted */
+    /* It checks that first name and last name are not empty */
+    /* If empty it shows an alert and stops the form submitting */
+    function validateForm() {
+
+      /* Get the value of the first name field */
+      var firstname = document.getElementById("firstname").value;
+
+      /* Get the value of the last name field */
+      var lastname = document.getElementById("lastname").value;
+
+      /* Check if first name is empty */
+      if (firstname === "") {
+        /* Show alert if first name is empty */
+        alert("Please enter your First Name. This field is required.");
+        /* Stop the form from submitting */
+        return false;
+      }
+
+      /* Check if last name is empty */
+      if (lastname === "") {
+        /* Show alert if last name is empty */
+        alert("Please enter your Last Name. This field is required.");
+        /* Stop the form from submitting */
+        return false;
+      }
+
+      /* If both fields are filled show success message */
+      alert("Thank you " + firstname + " " + lastname +
+        "! You have successfully signed up for the" +
+        " PureShine Auto Detail newsletter.");
+
+      /* Allow the form to submit */
+      return true;
+
+    }
+
+  </script>
+  <!-- ===== END JAVASCRIPT ===== -->
+
+
+</body>
+</html>
