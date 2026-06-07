@@ -1,0 +1,315 @@
+/*    PureShine Auto Detail
+   File: portfolio.css
+   Author: SR
+   Date: April 2026
+ */
+
+
+/*  BODY - applies to the whole page  */
+body {
+  /* BACKGROUND COLOUR 1: light grey - applied to the entire webpage as required */
+  background-color: #f4f4f4;
+
+  /* FONT FAMILY with 4 typefaces as required */
+  font-family: Arial, Helvetica, Georgia, monospace;
+
+  margin: 0;
+  padding: 0;
+
+  /* TEXT COLOUR 1: dark charcoal */
+  color: #222222;
+
+  /* FONT SIZE 1: base size for the whole page */
+  font-size: 16px;
+
+  /* FONT WEIGHT 1: normal weight for body text */
+  font-weight: normal;
+
+  /* FONT STYLE 1: normal style for body text */
+  font-style: normal;
+}
+
+
+/*  NAVIGATION BAR  */
+nav {
+  background-color: #1a1a2e;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo container */
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Car emoji icon */
+#logo-icon {
+  /* FONT SIZE 2: larger size - different from body font size */
+  font-size: 32px;
+}
+
+/* Logo company name */
+#logo-text {
+  /* TEXT COLOUR 2: white - different from body text colour */
+  color: white;
+  font-size: 20px;
+  /* FONT WEIGHT 2: bold - different from body font weight */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* The word Shine in the logo */
+#logo-shine {
+  /* TEXT COLOUR 3: gold highlight */
+  color: #f0c040;
+  /* FONT STYLE 2: italic - different from body font style */
+  font-style: italic;
+}
+
+/* Nav links container */
+#nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Each navigation link */
+#nav-links a {
+  color: white;
+  /* TEXT DECORATION 1: none - removes underline from nav links */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Nav link on hover */
+#nav-links a:hover {
+  color: #f0c040;
+  /* TEXT DECORATION 2: underline appears when hovering */
+  text-decoration: underline;
+}
+
+
+/* SECTION BOXES */
+/* White box used to wrap each section - this is a div */
+.section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  /* BACKGROUND COLOUR 2: white - different from page background */
+  background-color: white;
+  border-radius: 8px;
+}
+
+
+/*  HEADINGS  */
+h2 {
+  /* TEXT COLOUR 1 again: dark navy */
+  color: #1a1a2e;
+  /* FONT SIZE 3: larger than body text */
+  font-size: 28px;
+  /* FONT WEIGHT 2: bold */
+  font-weight: bold;
+  /* TEXT DECORATION 3: underline on all section headings */
+  text-decoration: underline;
+}
+
+h3 {
+  /* FONT SIZE 4: medium size - between body and h2 */
+  font-size: 20px;
+  /* FONT STYLE 2: italic */
+  font-style: italic;
+  /* FONT WEIGHT 1: normal - different from h2 */
+  font-weight: normal;
+}
+
+
+/*  THREE ALIGNED PARAGRAPHS  */
+/* Requirement: 3 differently aligned paragraphs */
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+
+/*  LINKS  */
+a {
+  /* TEXT DECORATION 2: underline on regular links */
+  text-decoration: underline;
+  color: #1a1a2e;
+}
+
+
+/*  LISTS  */
+/* Requirement: change bullet type to squares */
+ul {
+  list-style-type: square;
+}
+
+/* Requirement: change numbers to Roman numerals */
+ol {
+  list-style-type: upper-roman;
+}
+
+
+/*  CLASS SELECTOR EXAMPLE */
+/* Requirement: at least one class selector */
+/* Old crossed-out price inside the popular card - applied via span tag */
+.old-price {
+  /* TEXT DECORATION 4: line-through - different from underline */
+  text-decoration: line-through;
+  color: #999999;
+}
+
+
+/*  ID SELECTOR EXAMPLES  */
+/* Requirement: at least one ID selector */
+
+/* Most popular price card */
+#popular {
+  background-color: #1a1a2e;
+  color: white;
+  border-color: #f0c040;
+}
+
+#popular h3 {
+  color: #f0c040;
+}
+
+/* Footer at the bottom of the page */
+#footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* = UPDATED NAV FOR A4  */
+/* Nav bar wraps on smaller screens with more links */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+
+/* ===== NEWSLETTER FORM ===== */
+/* Styles the newsletter signup form */
+
+/* Each form field group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Form labels */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+/* Required star symbol */
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Text inputs and email input */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1a1a2e;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, Georgia, monospace;
+}
+
+/* Small helper text under each field */
+.form-group small {
+  color: #666666;
+  font-size: 13px;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Radio button group */
+.radio-group {
+  margin: 8px 0;
+}
+
+/* Radio button labels */
+.radio-group label {
+  font-weight: normal;
+  display: inline;
+  margin-left: 8px;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  margin: 8px 0;
+}
+
+/* Checkbox labels */
+.checkbox-group label {
+  font-weight: normal;
+  display: inline;
+  margin-left: 8px;
+}
+
+/* Text area */
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #1a1a2e;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, Georgia, monospace;
+}
+
+/* Form buttons container */
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Reset button style */
+.btn-reset {
+  display: inline-block;
+  background-color: #999999;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Reset button hover */
+.btn-reset:hover {
+  background-color: #666666;
+}
+
+/* Submit button uses existing btn class */
+input[type="submit"].btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
